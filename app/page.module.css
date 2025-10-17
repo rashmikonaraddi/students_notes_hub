@@ -1,0 +1,70 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.container {
+  max-width: 900px;
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 6px 24px rgba(16,24,40,0.08);
+}
+
+.title {
+  font-size: 2.25rem;
+  margin: 0 0 0.5rem 0;
+  color: #0f172a;
+}
+
+.description {
+  color: #475569;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.125rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondary {
+  display: inline-block;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  color: #475569;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid rgba(71,85,105,0.12);
+}
+
+/* Simple reset for the button; project may have global styles that override this */
+.btn {
+  appearance: none;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  padding: 0.65rem 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(79,70,229,0.12);
+}
+
+@media (max-width: 520px) {
+  .title { font-size: 1.5rem; }
+  .description { font-size: 1rem; }
+  .actions { flex-direction: column; }
+}
